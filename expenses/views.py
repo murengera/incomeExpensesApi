@@ -4,6 +4,7 @@ from .serializers import ExpenseSerializer
 from .models import  Expense
 from  .permissions import IsOwner
 from  rest_framework import  permissions
+from rest_framework import generics, mixins
 
 class ExpenseListAPIView(ListCreateAPIView):
     serializer_class = ExpenseSerializer
